@@ -1,0 +1,50 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">
+        <img src="logo.png" alt="Logo" style="width:30px;" class="rounded-pill me-2">
+        Venta de autos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contactanos" routerLinkActive="active">Contactanos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container my-1">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="bg-light py-3 mt-5 border-top">
+  <div class="container">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Mambo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/"></a>
+      </li>
+    </ul>
+  </div>
+</footer>
